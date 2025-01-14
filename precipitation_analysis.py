@@ -17,9 +17,9 @@ for measurement in precipitation_seattle:
     if months in total_monthly_precipitation:
         total_monthly_precipitation[months] += precipitation_value
     else:
-        total_monthly_precipitation[months] = precipitation_value    
+        total_monthly_precipitation[months] = precipitation_value  
 
-with open('precipitation_seattle.json', 'w', encoding='utf-8') as file:        
-    json.dump(precipitation_seattle, file)
+with open('total_monthly_precipitation.json', 'w', encoding='utf-8') as file:        
+    json.dump(total_monthly_precipitation, file)
 
  
